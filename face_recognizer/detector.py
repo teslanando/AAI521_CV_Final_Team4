@@ -5,8 +5,6 @@ import pickle
 from collections import Counter
 from PIL import Image, ImageDraw
 
-# import sys
-# print(sys.prefix)
 
 DEFAULT_ENCODINGS_PATH = Path("output/encodings.pkl")
 BOUNDING_BOX_COLOR = "blue"
@@ -92,8 +90,8 @@ def recognize_faces(
             name = _recognize_face(unknown_encoding, loaded_encodings)
             if not name:
                 name = "Unknown"
-            names.add(name)
             _display_face(draw, bounding_box, name)
+            if name != "Unknown": names.add(name)
 
         del draw
         pillow_image.show()
@@ -135,8 +133,6 @@ def _display_face(draw, bounding_box, name):
         name,
         fill=TEXT_COLOR,
     )
-
-# recognize_faces("unknown2.jpg")
 
 def validate(model: str = "hog"):
     num_correct = 0
