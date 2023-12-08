@@ -146,7 +146,7 @@ def validate(model: str = "hog"):
             if filepath.parent.name in names:
                 num_correct += 1
             num_examples += 1
-    print(f"precision: {num_correct / num_examples:.2f}")
+    print(f"accuracy: {num_correct / num_examples:.2f}")
 
 if __name__ == "__main__":
     if args.train:
