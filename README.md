@@ -76,7 +76,7 @@ We used [this dataset](https://vis-www.cs.umass.edu/lfw/) for training and valid
 **Note that you need to have CMake and a C compiler to be able to install the dependencies required to run this project.**  
 
 We recommend to create a venv with **Python 3.9** as the project might not run properly with newer Python versions.  
-Be sure to install the packages in *./face_recognizer/requirements.txt* along with shutil
+Be sure to install the packages in *./face_recognizer/requirements.txt*
 It expects this file heirarchy:
 
 
@@ -102,7 +102,7 @@ It expects this file heirarchy:
 
 Provided that data_cleaning script is run, the model can be trained by running the command line prompt `python detector.py --train`  
 For validation, run `python detector.py --validate`  
-For testing a single image, run `python detector.py --test -f img_dir`  
+For testing a single image, run `python detector.py --test -f img_path`  
 You can choose the method that face-recognition library would use to perform the training and testing by specifying the argument `-m [hog, cnn]`  
 cnn is optimized for GPU-enabled environments and hog (histogram of oriented gradients) works best for CPU.
 
