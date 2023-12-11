@@ -1,6 +1,9 @@
 # AAI521_CV_Final_Team4
 University of San Diego, Computer Vision final project. 
 
+# Video presentation: 
+    https://www.youtube.com/watch?v=U32sg_eIZ4s
+
 Dataset for FaceRec: https://www.kaggle.com/datasets/hereisburak/pins-face-recognition 
 
 # Make sure you have the necessary dependencies installed: 
